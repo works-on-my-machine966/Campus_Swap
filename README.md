@@ -1,4 +1,4 @@
-# 🔄 CampusSwap v1.0
+# 🔄 CampusSwap
 
 > **Smart Campus Micro-Barter & Skill Exchange Platform**
 
