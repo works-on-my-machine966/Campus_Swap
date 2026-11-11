@@ -1,75 +1,38 @@
-# React + TypeScript + Vite
+# 🔄 CampusSwap v1.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Smart Campus Micro-Barter & Skill Exchange Platform**
 
-Currently, two official plugins are available:
+CampusSwap is a decentralized, peer-to-peer micro-marketplace built exclusively for college students to trade lab equipment, textbooks, dorm essentials, and peer-to-peer tutoring sessions without exchanging cash.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🪙 Campus Credit Ledger:** Gamified zero-cash economy where listing items earns bonus credits, and reserving items deducts credits.
+- **⚡ Dual Exchange Model:** Supports both physical gear transfers (Lab kits, notes, dorm furniture) and skill swaps (Coding sessions, academic tutoring).
+- **🔍 Real-Time Filter & Search:** Instantly filter listings by categories or search by tags and keywords.
+- **🤝 Secure Request Flow:** Instant modal confirmation connecting peers with campus meet locations.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework:** React + Vite (TypeScript)
+- **Styling:** Tailwind CSS
+- **Icons & UI:** Custom interactive components & responsive dark-mode glassmorphism
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Getting Started Locally
 
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/works-on-my-machine966//campusswap.git
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install dependencies:**
+   ```bash
+   npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+3. **Start the local development server:**
+   ```bash
+   npm run dev
